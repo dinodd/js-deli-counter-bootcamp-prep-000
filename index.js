@@ -17,20 +17,20 @@ function nowServing(katzDeliLine) {
 }
 
 function currentLine(katzDeliLine) {
-  if(katzDeliLine === undefined) {
+  if(katzDeliLine[0] === undefined) {
     console.log('The line is currently empty.')
     }
   else {
     var line = 'The line is currently: ';
     for(var i = 0; i < katzDeliLine.length; i++) {
       if (i === katzDeliLine.length - 1){
-        line += (`${i}. ${katzDeliLine[i]}`)
+        line += (`${i + 1}. ${katzDeliLine[i]}`)
 
       }
       else {
-        line += (`${i}. ${katzDeliLine[i]}`)
+        line += (`${i + 1}. ${katzDeliLine[i]}`)
       }
     }
   }
-  return line;
+    return line;
 }
