@@ -17,7 +17,7 @@ function nowServing(katzDeliLine) {
 }
 
 function currentLine(katzDeliLine) {
-  if(katzDeliLine[0] === undefined) {
+  if(katzDeliLine === undefined) {
     console.log('The line is currently empty.')
     }
   else {
