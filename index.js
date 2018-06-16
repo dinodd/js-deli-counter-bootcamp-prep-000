@@ -15,3 +15,22 @@ function nowServing(katzDeliLine) {
     return (`Currently serving ${name}.`)
   }
 }
+
+function currentLine(katzDeliLine) {
+  if(katzDeliLine === undefined) {
+    console.log('The line is currently empty.')
+    }
+  else {
+    var line = 'The line is currently: ';
+    for(var i = 0; i < katzDeliLine.length; i++) {
+      if (i === katzDeliLine.length - 1){
+        line += (`${i + 1}. ${katzDeliLine[i]}`)
+        
+      }
+      else {
+        line += (`${i + 1}. ${katzDeliLine[i]}`)
+      }
+    }
+  }
+  return line;
+}
